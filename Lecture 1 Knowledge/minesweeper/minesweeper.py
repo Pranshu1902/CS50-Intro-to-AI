@@ -248,11 +248,9 @@ class MinesweeperAI():
 
         # Mark any safe spaces or mines:
         if safes:
-            knowledge_changed = True
             for safe in safes:
                 self.mark_safe(safe)
         if mines:
-            knowledge_changed = True
             for mine in mines:
                 self.mark_mine(mine)
 
